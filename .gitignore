@@ -3,5 +3,5 @@
 *.log
 *.pyc
 *.token
-/Log/
+/log/
 /src/test.py
