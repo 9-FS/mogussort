@@ -2,7 +2,7 @@
 Topic: "Mogussort"
 Author: "구FS"
 ---
-<link href="../md_style.css" rel="stylesheet"></link>
+<link href="../KFS/md_style.css" rel="stylesheet"></link>
 <body>
 
 # <p style="text-align: center">Mogussort</p>
@@ -194,12 +194,4 @@ This even means you might be able to play a game of Among Us while you wait for 
 
 Made in py📮sus📮 to improve performance in comparison to the original [Csussus version](https://github.com/sam-k0/Mogussort/).
 
-
-<div class="img_centre_30">
-    <a href="https://www.paypal.com/paypalme/KooFelixSangmo">
-        <img alt="Error: Could not load image source."
-        src="https://i.pinimg.com/originals/60/fd/e8/60fde811b6be57094e0abc69d9c2622a.jpg"/>
-    </a>
-    <p class=img_caption>Click to buy me a beer!</p>
-</div>
 </body>
