@@ -3,5 +3,6 @@
 *.log
 *.pyc
 *.token
+/doc_templates/
 /log/
 /src/test.py
