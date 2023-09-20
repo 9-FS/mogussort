@@ -3,6 +3,7 @@
 *.log
 *.pyc
 *.token
+*.xlsx
 /doc_templates/
 /log/
-/src/test.py
+test.py
