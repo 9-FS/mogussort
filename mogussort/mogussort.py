@@ -28,8 +28,8 @@ def mogussort(crew_in: list) -> list:
     logging.info(f"Crew in: {crew_in}")
     crew_alive=copy.deepcopy(crew_in)
     
-    while 0<len(crew_alive):                                                # vote until I empty
-        crew_out.append(crew_alive.pop(random.randrange(len(crew_alive))))  # randomly vote a crewmate out of I (pop) and append to O
+    while 0<len(crew_alive):                                                # vote until crew_in empty
+        crew_out.append(crew_alive.pop(random.randrange(len(crew_alive))))  # randomly vote a crewmate out of crew_in (pop) and append to crew_out
         votes+=1
         logging.debug("--------------------------------------------------")
         logging.debug(f"Voted out \"{crew_out[-1]}\".")
