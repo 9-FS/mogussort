@@ -29,7 +29,6 @@ jobs:
         pip install poetry
         poetry config virtualenvs.in-project true
         poetry config repositories.test-pypi https://test.pypi.org/legacy/
-        poetry config pypi-token.test-pypi  pypi-AgENdGVzdC5weXBpLm9yZwIkYTM4MTg0NmMtNTExZi00OTI5LWE4OTMtMDE2NTQ1MjNmM2YwAAIqWzMsImY1ZWI1MmU1LTRiNGEtNDgxOC04NzI3LTM0NjY1MmQ0ZDkyMiJdAAAGICEiUYHs9cBp2_DlZ2oBnBlKlDrxxhLJsJEEqht4dv2R
         poetry install
     
     - name: Check Project Version and Tag Match
