@@ -2,9 +2,10 @@
 import copy
 import random
 import logging
+import typing
 
 
-def mogussort(crew_in: list) -> list:
+def mogussort(crew_in: list[typing.Any]) -> list[typing.Any]:
     """
     There are 2 (two, 2📮) lists, `crew_in` and `crew_out`.
 
