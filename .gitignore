@@ -3,6 +3,10 @@
 *.pyc
 *.token
 *.xlsx
-/doc_templates/
-/log/
-test.py
+
+.hypothesis/
+.pytest_cache/
+doc_templates/
+log/
+
+tests/test.py

@@ -9,6 +9,42 @@ on:
       - "*" # execute every time tag is pushed
 
 jobs:
+  test:
+    name: Run Tests
+    env:
+      working-directory: ${{github.workspace}}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4 # makes repository structure available
+
+      - name: Install Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{env.PYTHON_VERSION}}
+      
+      - name: Install Poetry
+        run: |
+          pip install poetry 
+          poetry config virtualenvs.in-project true
+          poetry config repositories.test-pypi https://test.pypi.org/legacy/
+          poetry install
+      
+      - name: Check Project Version and Tag Match
+        run: |
+          project_version=$(poetry version --no-ansi | awk '{print $NF}')
+          tag=${GITHUB_REF#refs/tags/*}
+          if [ "$project_version" == "$tag" ]; then
+            exit 0
+          else
+            exit 1
+          fi
+      
+      - name: Run Tests
+        run: poetry run pytest
+
+
   build:
     name: Build Distributables
     env:
@@ -31,16 +67,6 @@ jobs:
         poetry config repositories.test-pypi https://test.pypi.org/legacy/
         poetry install
     
-    - name: Check Project Version and Tag Match
-      run: |
-        project_version=$(poetry version --no-ansi | awk '{print $NF}')
-        tag=${GITHUB_REF#refs/tags/*}
-        if [ "$project_version" == "$tag" ]; then
-          exit 0
-        else
-          exit 1
-        fi
-    
     - name: Build Distributables
       run: poetry build
 
@@ -58,7 +84,7 @@ jobs:
         name: pypi
         url: ${{env.PYPI_URL}}
     name: Deploy on PyPI
-    needs: build
+    needs: [build, test]
     permissions:
       id-token: write
     runs-on: ubuntu-latest
