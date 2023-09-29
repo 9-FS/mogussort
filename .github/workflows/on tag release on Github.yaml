@@ -1,6 +1,6 @@
 name: On Tag Release on Github
 env:
-  PROJECT_NAME: Mogussort
+  PROJECT_NAME: mogussort
   PYTHON_VERSION: ^3.11.0
 on:
   push: 

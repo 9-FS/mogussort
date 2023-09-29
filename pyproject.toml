@@ -4,7 +4,7 @@ description = ""
 license     = "MIT"
 name        = "mogussort"
 readme      = "readme.md"
-repository  = "https://github.com/9-FS/2023-04-10-Mogussort"
+repository  = "https://github.com/9-FS/2023-04-10-mogussort"
 version     = "1.0.4"
 
 [tool.poetry.dependencies]

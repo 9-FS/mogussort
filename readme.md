@@ -1,11 +1,11 @@
 ---
-Topic: "Mogussort"
+Topic: "mogussort"
 Author: "구FS"
 ---
 <link href="./doc_templates/md_style.css" rel="stylesheet"></link>
 <body>
 
-# <p style="text-align: center">Mogussort</p>
+# <p style="text-align: center">mogussort</p>
 <br>
 <br>
 
@@ -15,7 +15,7 @@ Author: "구FS"
     <p class=img_caption>😤😩😩💦💦💦</p>
 </div>
 
-- [1. 📮Mogussort](#1-mogussort)
+- [1. 📮mogussort](#1-mogussort)
 - [2. 📮Lore📮](#2-lore)
 - [3. Installation](#3-installation)
 - [4. 📮How it works📮](#4-how-it-works)
@@ -23,7 +23,7 @@ Author: "구FS"
 - [6. 📮Sus📮](#6-sus)
 - [7. Language](#7-language)
 
-## 1. 📮Mogussort
+## 1. 📮mogussort
 
 World's (📮)SUSSIEST sorting algorithm
 
@@ -38,11 +38,11 @@ World's (📮)SUSSIEST sorting algorithm
 Your normal and boring sorting algorithms are just too fast? You want to introduce some sussy code to your programs?  
 Then you have come to the right place.
 
-Inspired by the fantastic [Csussus version](https://github.com/sam-k0/Mogussort/) and certified 📮extra sussy📮 by the original author!
+Inspired by the fantastic [Csussus version](https://github.com/sam-k0/mogussort/) and certified 📮extra sussy📮 by the original author!
 
 ## 3. Installation
 
-You can install 📮Mogussort📮 from PyPi with `pip install Mogussort`.
+You can install 📮mogussort📮 from PyPi with `pip install mogussort`.
 
 <div style="page-break-after: always;"></div>
 
@@ -199,6 +199,6 @@ This even means you might be able to play a game of Among Us while you wait for 
     <p class=img_caption>pysus</p>
 </div>
 
-Made in py📮sus📮 to improve performance in comparison to the original [Csussus version](https://github.com/sam-k0/Mogussort/).
+Made in py📮sus📮 to improve performance in comparison to the original [Csussus version](https://github.com/sam-k0/mogussort/).
 
 </body>
