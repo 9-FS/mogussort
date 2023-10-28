@@ -2,11 +2,11 @@
 *.log
 *.pyc
 *.token
-*.xlsx
 
 .hypothesis/
 .pytest_cache/
 doc_templates/
 log/
 
+runtime calculation.xlsx
 tests/test.py

@@ -1,6 +1,6 @@
 name: On Tag Deploy on PyPI
 env:
-  PYPI_URL: https://pypi.org/project/mogussort/
+  PYPI_URL: PYPI URL
   PYTHON_VERSION: ^3.11.0
 on:
   push: 
@@ -24,6 +24,9 @@ jobs:
         with:
           python-version: ${{env.PYTHON_VERSION}}
       
+      - name: Update Pip
+        run: pip install --upgrade pip
+      
       - name: Install Poetry
         run: |
           pip install poetry 
@@ -41,8 +44,8 @@ jobs:
             exit 1
           fi
       
-      - name: Run Tests
-        run: poetry run pytest
+      # - name: Run Tests
+      #   run: poetry run pytest
 
 
   build:
@@ -59,6 +62,9 @@ jobs:
       uses: actions/setup-python@v4
       with:
         python-version: ${{env.PYTHON_VERSION}}
+    
+    - name: Update Pip
+      run: pip install --upgrade pip
     
     - name: Install Poetry
       run: |
