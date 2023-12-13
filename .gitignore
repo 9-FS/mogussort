@@ -5,8 +5,10 @@
 
 .hypothesis/
 .pytest_cache/
+config/
 doc_templates/
 log/
 
+Dockerfile
 runtime calculation.xlsx
 tests/test.py
